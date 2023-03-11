@@ -1,0 +1,18 @@
+<div class="login-box">
+  <h2>Login</h2>
+  <form #simpleForm="ngForm">
+    <div class="user-box" #box >
+      <input type="text" [(ngModel)]="email" name="email" required  >
+      <label>G-mail</label>
+    </div>
+    <div class="user-box">
+      <input type="password" [(ngModel)]="pass" name="pass" required>
+      <label>Password</label>
+    </div>
+    <button (click)="getValues()">
+      Submit
+    </button>
+  </form>
+</div>
+
+
